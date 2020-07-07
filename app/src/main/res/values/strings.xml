@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">FitnessClub</string>
+    <string name="title_activity_dashboard">DashboardActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">About Us</string>
+    <string name="title_category">Category</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="map_key" translatable="false">AIzaSyAmZw5Ayp8L2JZLOXAG8O67snQqT7Te5oo</string>
+</resources>
