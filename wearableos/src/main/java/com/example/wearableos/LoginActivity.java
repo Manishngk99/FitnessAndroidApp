@@ -26,7 +26,6 @@ public class LoginActivity extends WearableActivity {
         btnLogin = findViewById(R.id.btnLogin);
         etusername = findViewById(R.id.etUsername);
         etpassword = findViewById(R.id.etPassword);
-
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
