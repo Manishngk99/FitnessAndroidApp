@@ -5,7 +5,6 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
-import android.support.wearable.activity.WearableActivity;
 
 import com.example.wearableos.R;
 import com.example.wearableos.adapter.ExercisesAdapter;

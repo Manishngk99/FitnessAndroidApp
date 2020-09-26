@@ -1,5 +1,6 @@
 package com.example.wearableos.api;
 
+import com.example.wearableos.model.UserDataModel;
 import com.example.wearableos.serverresponse.SignupResponse;
 import com.example.wearableos.serverresponse.ImageResponse;
 import com.example.wearableos.model.UserModel;
@@ -10,6 +11,8 @@ import retrofit2.http.Body;
 import retrofit2.http.Field;
 import retrofit2.http.FormUrlEncoded;
 
+import retrofit2.http.GET;
+import retrofit2.http.Header;
 import retrofit2.http.Multipart;
 import retrofit2.http.POST;
 import retrofit2.http.Part;
@@ -28,4 +31,7 @@ public interface UserApi {
 
     @POST("/registration")
     Call<SignupResponse> registerUser(@Body UserModel userModel);
+
+    @GET("getUser")
+    Call<UserDataModel> displayUser(@Header("Authorization") String token);
 }

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.ProfileActivity">
+
+    <ImageView
+        android:id="@+id/ivDashboardProfile"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        app:srcCompat="@drawable/profilepic" />
+
+    <TextView
+        android:id="@+id/tvDashboardName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Name"
+        android:textColor="#FFF"
+        android:textSize="10sp" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:columnCount="2"
+        android:rowCount="3">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="0"
+        android:layout_column="0"
+        android:text="Weight(KG)"
+        android:textSize="10sp"/>
+    <TextView
+        android:id="@+id/tvDWeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="70kg"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        android:textColor="@color/primary_text_light"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Height(CM)"
+            android:textSize="10sp"/>
+        <TextView
+            android:id="@+id/ivDHeight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="7ft"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            android:textColor="@color/primary_text_light"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Category"
+            android:textSize="10sp"/>
+        <TextView
+            android:id="@+id/tvDCatagory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fit"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            android:textColor="@color/primary_text_light"/>
+
+    </GridLayout>
+
+</LinearLayout>
