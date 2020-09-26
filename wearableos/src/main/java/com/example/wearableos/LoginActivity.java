@@ -10,12 +10,13 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.example.wearableos.StrictModeClass.StrictMode;
+import com.example.wearableos.activities.SignUpActivity;
 import com.example.wearableos.bll.LoginBLL;
 
 
 public class LoginActivity extends WearableActivity {
 
-    private Button btnLogin;
+    private Button btnLogin, btnSignup;
     private EditText etusername, etpassword;
 
     @Override
@@ -24,12 +25,19 @@ public class LoginActivity extends WearableActivity {
         setContentView(R.layout.activity_login);
         //binding
         btnLogin = findViewById(R.id.btnLogin);
+        btnSignup = findViewById(R.id.btnSignup);
         etusername = findViewById(R.id.etUsername);
         etpassword = findViewById(R.id.etPassword);
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 login();
+            }
+        });
+        btnSignup.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Signup();
             }
         });
          }
@@ -60,5 +68,9 @@ public class LoginActivity extends WearableActivity {
             etusername.requestFocus();
         }
 
+    }
+    public void Signup(){
+        Intent intent = new Intent(LoginActivity.this, SignUpActivity.class);
+        startActivity(intent);
     }
 }
